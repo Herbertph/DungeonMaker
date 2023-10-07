@@ -1,38 +1,61 @@
 # DungeonMaker
-Versions of my first Game
-Boardgame I'm developing and I decided to create a program to help me with testing and balancing. 
-Below are the rules of the game. Note that we need some abstraction but overall the game is functional.
 
-Game Name: Yet to be defined
+Welcome to DungeonMaker - a digital implementation of a dice-rolling board game where adventures are created and played out by exploring mystical lands, seeking treasures, and battling monsters. This repository is designed to assist with testing and balancing the gameplay of DungeonMaker.
 
-Components:
-9 dice
-1 Deck of 20 Forest cards
-1 Deck of 20 Desert cards
-1 Deck of 20 Dungeon cards
+## Game Overview
 
-Game Preparation:
-Each player starts at level 1. The decks of Forest, Desert, and Dungeon are shuffled separately and placed in the middle of the table.
-Player's Turn:
-On their turn, the player does the following:
+DungeonMaker invites players into a fantastical world of adventure and peril. Throughout the game, players will venture through various landscapes including treacherous Forests, arid Deserts, and perilous Dungeons. These settings present opportunities to uncover treasures and engage in battles with monstrous entities.
 
-Dice Roll: The player rolls a number of dice based on their level (5 for levels 1-3, 7 for levels 4-6, 9 for levels 7 and above). All dice outcomes are revealed.
-Reroll Dice: The player has the option to reroll any number of the dice obtained in the first roll, with the exception of the dice showing the Dragon face.
+## Components
 
-Perform Actions: The player can use the dice outcomes to perform several actions. The available actions depend on the dice outcomes:
- Adventure (Forest, Desert, Dungeon): If the player gets one or more Adventure dice, they choose one of the locations (Forest, Desert, Dungeon) and can draw a card from the corresponding deck, spending the relevant Adventure die. When choosing a location, all other location faces on the player's dice must be discarded.
- Sword: Allows the player to defeat monsters.
- Collection: Allows the player to collect discovered treasures.
+- 9 Dice
+- 1 Deck of 20 Forest cards
+- 1 Deck of 20 Desert cards
+- 1 Deck of 20 Dungeon cards
 
-Adventure Action Consequences:
-Depending on the card drawn, the following events occur:
- Treasure: The player reveals the card on the table and can decide later whether or not to collect the treasure, spending a Collection face.
- Enemy: The player needs to spend Sword faces equal to the monster's level to defeat it. If they don't have enough Swords, the player is defeated and loses all of their yet unused actions. The enemy and the treasure remain in the location and must be defeated before other cards can be drawn there. If the player has enough Swords, they defeat the monster, can continue their actions as described by the defeated monster card, and earn victory points.
+## Game Preparation
 
-If the player survives and has no more Adventure faces, they can spend their Collection faces to collect any treasure discovered during their adventure.
+- Each player begins at level 1.
+- Decks of Forest, Desert, and Dungeon cards are shuffled separately and placed center-table.
 
-End of Turn and Progression:
-At the end of the turn, if the player was successful in their adventure (that is, they survived), they level up.
+## Gameplay
 
-Objective and End of Game:
-The goal is to reach level 10 with the most treasures. The game ends when a player reaches level 10 and all other players have had at least one more play. The winner is the player with the most treasures at the end of the game.
+Player’s turns are organized in the following sequence:
+
+### 1. Dice Roll
+
+- Players roll a specific number of dice depending on their level:
+  - 5 for levels 1-3
+  - 7 for levels 4-6
+  - 9 for levels 7 and above
+- All dice outcomes are revealed upon rolling.
+
+### 2. Reroll Dice
+
+- Players may reroll any number of dice from the first roll, excluding those that reveal the Dragon face.
+
+### 3. Perform Actions
+
+- Players use dice outcomes to perform various actions, with available actions dependent upon the dice outcomes:
+  - **Adventure (Forest, Desert, Dungeon):** Players use Adventure dice to draw a card from a chosen location (Forest, Desert, Dungeon). After selecting a location, all other location faces on the dice are discarded.
+  - **Sword:** Players can defeat monsters.
+  - **Collection:** Players can gather discovered treasures.
+    
+### Adventure Action Consequences
+
+Upon drawing a card, several events can occur:
+
+- **Treasure:** The card is revealed, and players may choose to collect the treasure later by using a Collection face.
+- **Enemy:** Players must expend Sword faces equal to the monster's level to defeat it. If there are insufficient Swords, the player is defeated, losing all unused actions. The enemy and treasure remain in the location and must be defeated before drawing other cards from it. If the player has enough Swords, they defeat the monster, execute actions as directed by the defeated monster card, and earn victory points.
+
+Should players survive and have no more Adventure faces, they may use Collection faces to gather any treasures found during their adventure.
+
+## End of Turn and Progression
+
+- If the player successfully navigates their adventure (i.e., they survive), they level up.
+
+## Objective and End of Game
+
+- The primary goal is to reach level 10 while collecting as many treasures as possible.
+- The game ends when a player reaches level 10, and all other players have had at least one additional turn.
+- The winner is the player with the most treasures at the end of the game.
